@@ -119,8 +119,24 @@ img{
   .header nav li+li{
     margin-left: 10px;
   }
-  
-  
+}
+@media only screen and (max-width: 560px){
+  .header nav ul{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    
+  }
+  .header nav li{
+    max-width: 100px;
+    margin-top: 10px;
+  }
+  .header nav li a{
+    text-align: left;
+  }
+  .header nav li+li{
+    margin-left: 0px;
+  }
 }
 
 /*Sidenav*/
@@ -193,6 +209,17 @@ img{
   }
 }
 
+@media only screen and (max-width: 560px){
+  .sidenav li a {
+    min-width: 50px;
+    max-width: 100px;
+  }
+  .sidenav p{
+    font-size: 14px;
+  }
+}
+
+
 /*Content*/
 
 .content{
@@ -237,6 +264,23 @@ img{
   .content{
     grid-template-columns: auto;
     gap: 20px;
+  }
+}
+
+@media only screen and (max-width:560px){
+  .content{
+    gap: 10px;
+  }
+  .content h1 {
+    font-size: 24px;
+  }
+  .content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .centralizado :first-child {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }
 /*Projetos*/
@@ -460,6 +504,14 @@ img{
   }
   .mapa{
     max-width: 400px;
+  }
+}
+@media only screen and (max-width: 560px){
+  .form_contato{
+    grid-template-columns: auto;
+  }
+  .mapa{
+    max-width: 350px;
   }
 }
 /*Equipe*/
