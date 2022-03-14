@@ -454,7 +454,11 @@ img{
 .mapa{
   max-width: 450px;
 }
-
+@media only screen and (max-width: 960px){
+  .form_contato{
+    grid-template-columns: auto;
+  }
+}
 /*Equipe*/
 .engenheiros img{
   max-height: 300px;
