@@ -458,6 +458,9 @@ img{
   .form_contato{
     grid-template-columns: auto;
   }
+  .mapa{
+    max-width: 400px;
+  }
 }
 /*Equipe*/
 .engenheiros img{
